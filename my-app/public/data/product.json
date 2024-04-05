@@ -1,0 +1,52 @@
+{
+    "sliderData" :
+    [
+        {
+            "id" :1,
+            "img" :"/image/13.jpg",
+            "name" :"카고 팬츠",
+            "price" : 47000
+            
+        },
+        {
+            "id" :2,
+            "img" :"/image/31.jpg",
+            "name" :"카고 팬츠",
+            "price" : 47000
+            
+        },
+        {
+            "id" :3,
+            "img" :"/image/37.jpg",
+            "name" :"카고 팬츠",
+            "price" : 47000
+            
+        },
+        {
+            "id" :4,
+            "img" :"/image/19.jpg",
+            "name" :"카고 팬츠",
+            "price" : 47000
+            
+        },
+        {
+            "id" :5,
+            "img" :"/image/33.jpg",
+            "name" :"카고 팬츠",
+            "price" : 47000
+            
+        },
+        {
+            "id" :6,
+            "img" :"/image/40.jpg",
+            "name" :"카고 팬츠",
+            "price" : 47000
+            
+        }
+
+
+    ]
+    
+
+
+}
