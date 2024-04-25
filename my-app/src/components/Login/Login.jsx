@@ -67,6 +67,7 @@ export default function Login() {
             <div>
                 <Btn onClick={() => {
                     dispatch(login(values));
+                    alert("로그인 되었습니다.");
                     navigate("/");
                 }}>
                     Login

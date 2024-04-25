@@ -6,7 +6,7 @@ import Product from "../Product/product";
 import Navbar from "../Navbar/Navbar";
 import styled from "styled-components";
 import { addCart } from "../../reducer/CartSlice";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Color = styled.div`
     display:inline;
@@ -55,7 +55,7 @@ export default function Detail() {
     const DColor = products[0].color[0];
     const [size, setsize] = useState(DSize);
     const [color, setcolor] = useState(DColor);
-    const cart = useSelector((state) => state.Cart.Cart);
+    const navigate = useNavigate();
     const ColorOption = (e) => {
         const value = e.target.value;
         setcolor(value);
@@ -65,20 +65,10 @@ export default function Detail() {
         const value = e.target.value;
         setsize(value);
     }
-
-    const colorbtn = [
-        "red",
-        "black",
-        "grey"
-    ];
-
-    const sizebtn = [
-        "M", "L", "XL"
-    ];
+    const colorbtn = [  "red", "black", "grey"];
+    const sizebtn = [   "M", "L", "XL"];
     const dispatch = useDispatch();
-    console.log(color);
-    console.log(cart);
-    console.log(size);
+    
     return (
         <div>
             <Navbar />
@@ -92,8 +82,6 @@ export default function Detail() {
                         );
                     })}
                 </Selected>
-
-
             </Color>
             <Size>
                 <span>SIZE</span>
@@ -119,11 +107,22 @@ export default function Detail() {
                                     price={product.price}
                                     color={product.color}
                                 >
-
                                 </Product>
                             </div>
                             <Btn>
-                                <button >BUY NOW</button>
+                                <button onClick={() => {dispatch(addCart({
+                                    id: product.id,
+                                    price: product.price,
+                                    size: size,
+                                    Count: 1,
+                                    img: product.img,
+                                    totalPrice: product.price,
+                                    name: product.name,
+                                    descript: product.descript,
+                                    color: color,
+                                }))
+                                navigate("/CART")
+                                }}>BUY NOW</button>
                                 <button onClick={() => dispatch(addCart({
                                     id: product.id,
                                     price: product.price,
@@ -136,7 +135,6 @@ export default function Detail() {
                                     color: color,
                                 }))}>ADD TO CART</button>
                             </Btn>
-
                         </>
                     );
                 })}

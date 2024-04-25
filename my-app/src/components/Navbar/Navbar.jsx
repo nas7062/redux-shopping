@@ -54,7 +54,7 @@ const Logo = styled.div`
 export default function Navbar() {
     const [first, setfirst] = useState(false);
     const [second, setsecond] = useState(false);
-    const user = useSelector((state) => state.Login.user.LoginUser);
+    const user = JSON.parse(sessionStorage.getItem("LoginUser"));
     const dispatch = useDispatch();
     const totalCount = useSelector((state) => state.Cart.totalCount);
     const firstHandler = () => {

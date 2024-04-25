@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import styled from "styled-components";
 import axios from "axios";
 import { useEffect, useState } from "react";
+
 const settings = {
     dots: true,
     infinite: true,
@@ -43,7 +44,7 @@ const Product = styled.div`
 `
 export default function SlickSlider() {
     const [products, setproducts] = useState([]);
-
+    
     useEffect(() => {
         axios.get("/data/product.json").then((data) => {
             setproducts(data.data.sliderData);
@@ -57,8 +58,6 @@ export default function SlickSlider() {
                     <p>{product.name}</p>
                     <p>KRW {product.price}</p>
                 </Product>
-
-
             ))}
 
         </Slide>

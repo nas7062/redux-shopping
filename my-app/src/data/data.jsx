@@ -8,7 +8,7 @@ export const productData = [
         "price": 37000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top"]
 
     },
     {
@@ -19,7 +19,7 @@ export const productData = [
         "price": 107000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top","Outer"]
     },
     {
         "id": 3,
@@ -29,7 +29,7 @@ export const productData = [
         "price": 97000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top","Outer"]
     },
     {
         "id": 4,
@@ -39,7 +39,7 @@ export const productData = [
         "price": 89000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top","Outer"]
     },
     {
         "id": 5,
@@ -49,7 +49,7 @@ export const productData = [
         "price": 45000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Bottom"]
 
     },
     {
@@ -60,7 +60,7 @@ export const productData = [
         "price": 39000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top","Outer"]
 
     },
     {
@@ -71,7 +71,7 @@ export const productData = [
         "price": 37000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top"]
 
     },
     {
@@ -82,7 +82,7 @@ export const productData = [
         "price": 37000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type":["Top","Outer"]
 
     },
     {
@@ -93,7 +93,7 @@ export const productData = [
         "price": 43000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Top"]
 
     },
     {
@@ -104,7 +104,7 @@ export const productData = [
         "price": 41000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Bottom"]
 
     },
     {
@@ -115,7 +115,7 @@ export const productData = [
         "price": 37000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
+        "type": ["Bottom"]
 
     },
     {
@@ -126,8 +126,7 @@ export const productData = [
         "price": 37000,
         "color": ["black", "red", "grey"],
         "size": ["M", "L", "XL"],
-        "type": "Top"
-
+        "type": ["Top"]
     }
 
 
